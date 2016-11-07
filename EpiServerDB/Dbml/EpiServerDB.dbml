@@ -1,0 +1,1195 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EPiServerDB_c22e7d36" Class="EpiServerDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=EPiServerDB_c22e7d36;Integrated Security=True" SettingsObjectName="EpiServerDB.Properties.Settings" SettingsPropertyName="EPiServerDB_c22e7d36ConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AspNetRoles" Member="AspNetRoles">
+    <Type Name="AspNetRole">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="AspNetRole_AspNetUserRole" Member="AspNetUserRoles" ThisKey="Id" OtherKey="RoleId" Type="AspNetUserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblXFormData" Member="tblXFormDatas">
+    <Type Name="tblXFormData">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="ChannelOptions" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DatePosted" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FormId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="PageGuid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="String01" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String02" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String03" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String04" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String05" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String06" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String07" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String08" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String09" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String10" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String11" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String12" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String13" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String14" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String15" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String16" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String17" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String18" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String19" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String20" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Indexed_String01" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String02" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String03" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Association Name="tblBigTableIdentity_tblXFormData" Member="tblBigTableIdentity" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserClaims" Member="AspNetUserClaims">
+    <Type Name="AspNetUserClaim">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ClaimType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ClaimValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="AspNetUser_AspNetUserClaim" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserLogins" Member="AspNetUserLogins">
+    <Type Name="AspNetUserLogin">
+      <Column Name="LoginProvider" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProviderKey" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AspNetUser_AspNetUserLogin" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserRoles" Member="AspNetUserRoles">
+    <Type Name="AspNetUserRole">
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AspNetRole_AspNetUserRole" Member="AspNetRole" ThisKey="RoleId" OtherKey="Id" Type="AspNetRole" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="AspNetUser_AspNetUserRole" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUsers" Member="AspNetUsers">
+    <Type Name="AspNetUser">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsApproved" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreationDate" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="LastLoginDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="LastLockoutDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="EmailConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordHash" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SecurityStamp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumberConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TwoFactorEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LockoutEndDateUtc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LockoutEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccessFailedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="AspNetUser_AspNetUserClaim" Member="AspNetUserClaims" ThisKey="Id" OtherKey="UserId" Type="AspNetUserClaim" />
+      <Association Name="AspNetUser_AspNetUserLogin" Member="AspNetUserLogins" ThisKey="Id" OtherKey="UserId" Type="AspNetUserLogin" />
+      <Association Name="AspNetUser_AspNetUserRole" Member="AspNetUserRoles" ThisKey="Id" OtherKey="UserId" Type="AspNetUserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblActivityLog" Member="tblActivityLogs">
+    <Type Name="tblActivityLog">
+      <Column Name="pkID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LogData" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ChangeDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Action" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChangedBy" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="RelatedItem" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblActivityLog_tblActivityLogAssociation" Member="tblActivityLogAssociations" ThisKey="pkID" OtherKey="To" Type="tblActivityLogAssociation" />
+      <Association Name="tblActivityLog_tblActivityLogComment" Member="tblActivityLogComments" ThisKey="pkID" OtherKey="EntryId" Type="tblActivityLogComment" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblActivityLogAssociation" Member="tblActivityLogAssociations">
+    <Type Name="tblActivityLogAssociation">
+      <Column Name="[From]" Member="From" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[To]" Member="To" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="tblActivityLog_tblActivityLogAssociation" Member="tblActivityLog" ThisKey="To" OtherKey="pkID" Type="tblActivityLog" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblActivityLogComment" Member="tblActivityLogComments">
+    <Type Name="tblActivityLogComment">
+      <Column Name="pkID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EntryId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LastUpdated" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="tblActivityLog_tblActivityLogComment" Member="tblActivityLog" ThisKey="EntryId" OtherKey="pkID" Type="tblActivityLog" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblBigTable" Member="tblBigTables">
+    <Type Name="tblBigTable">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean02" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean03" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean04" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean05" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer04" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer05" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer06" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer07" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer08" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer09" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long03" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long04" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long05" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime02" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime03" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime04" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime05" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid02" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid03" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float04" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float05" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float06" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float07" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Decimal01" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="Decimal02" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="String01" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String02" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String03" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String04" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String05" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String06" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String07" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String08" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String09" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String10" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary02" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary03" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary04" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary05" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Indexed_Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Indexed_Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Indexed_Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Indexed_Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Decimal01" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="Indexed_String01" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String02" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String03" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(900)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="tblBigTableIdentity_tblBigTable" Member="tblBigTableIdentity" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblBigTableIdentity" Member="tblBigTableIdentities">
+    <Type Name="tblBigTableIdentity">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Guid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Association Name="tblBigTableIdentity_tblXFormData" Member="tblXFormDatas" ThisKey="pkId" OtherKey="pkId" Type="tblXFormData" />
+      <Association Name="tblBigTableIdentity_tblBigTable" Member="tblBigTables" ThisKey="pkId" OtherKey="pkId" Type="tblBigTable" />
+      <Association Name="tblBigTableIdentity_tblBigTableReference" Member="tblBigTableReferences" ThisKey="pkId" OtherKey="RefIdValue" Type="tblBigTableReference" />
+      <Association Name="tblBigTableIdentity_tblBigTableReference1" Member="tblBigTableReferences1" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableReference" />
+      <Association Name="tblBigTableIdentity_tblIndexRequestLog" Member="tblIndexRequestLogs" ThisKey="pkId" OtherKey="pkId" Type="tblIndexRequestLog" />
+      <Association Name="tblBigTableIdentity_tblSystemBigTable" Member="tblSystemBigTables" ThisKey="pkId" OtherKey="pkId" Type="tblSystemBigTable" />
+      <Association Name="tblBigTableIdentity_tblTaskInformation" Member="tblTaskInformations" ThisKey="pkId" OtherKey="pkId" Type="tblTaskInformation" />
+      <Association Name="tblBigTableIdentity_tblVisitorGroupStatistic" Member="tblVisitorGroupStatistics" ThisKey="pkId" OtherKey="pkId" Type="tblVisitorGroupStatistic" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblBigTableReference" Member="tblBigTableReferences">
+    <Type Name="tblBigTableReference">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyName" Type="System.String" DbType="NVarChar(75) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CollectionType" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="ElementType" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="ElementStoreName" Type="System.String" DbType="NVarChar(375)" CanBeNull="true" />
+      <Column Name="IsKey" Type="System.Boolean" DbType="Bit NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[Index]" Member="Index" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BooleanValue" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IntegerValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LongValue" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateTimeValue" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GuidValue" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="FloatValue" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="StringValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BinaryValue" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RefIdValue" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ExternalIdValue" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DecimalValue" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Association Name="tblBigTableIdentity_tblBigTableReference" Member="tblBigTableIdentity" ThisKey="RefIdValue" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+      <Association Name="tblBigTableIdentity_tblBigTableReference1" Member="tblBigTableIdentity1" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblBigTableStoreConfig" Member="tblBigTableStoreConfigs">
+    <Type Name="tblBigTableStoreConfig">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="TableName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="EntityTypeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DateTimeKind" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblBigTableStoreConfig_tblBigTableStoreInfo" Member="tblBigTableStoreInfos" ThisKey="pkId" OtherKey="fkStoreId" Type="tblBigTableStoreInfo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblBigTableStoreInfo" Member="tblBigTableStoreInfos">
+    <Type Name="tblBigTableStoreInfo">
+      <Column Name="fkStoreId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PropertyName" Type="System.String" DbType="NVarChar(75) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PropertyMapType" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyIndex" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ColumnName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="ColumnRowIndex" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblBigTableStoreConfig_tblBigTableStoreInfo" Member="tblBigTableStoreConfig" ThisKey="fkStoreId" OtherKey="pkId" Type="tblBigTableStoreConfig" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblCategory" Member="tblCategories">
+    <Type Name="tblCategory">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkParentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CategoryGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Available" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Selectable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="SuperCategory" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="tblCategory_tblCategory" Member="tblCategories" ThisKey="pkID" OtherKey="fkParentID" Type="tblCategory" />
+      <Association Name="tblCategory_tblContentCategory" Member="tblContentCategories" ThisKey="pkID" OtherKey="fkCategoryID" Type="tblContentCategory" />
+      <Association Name="tblCategory_tblWorkContentCategory" Member="tblWorkContentCategories" ThisKey="pkID" OtherKey="fkCategoryID" Type="tblWorkContentCategory" />
+      <Association Name="tblCategory_tblCategory" Member="tblCategory1" ThisKey="fkParentID" OtherKey="pkID" Type="tblCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblChangeNotificationConnection" Member="tblChangeNotificationConnections">
+    <Type Name="tblChangeNotificationConnection">
+      <Column Name="ConnectionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProcessorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="IsOpen" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastActivityDbUtc" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="tblChangeNotificationConnection_tblChangeNotificationQueuedGuid" Member="tblChangeNotificationQueuedGuids" ThisKey="ConnectionId" OtherKey="ConnectionId" Type="tblChangeNotificationQueuedGuid" />
+      <Association Name="tblChangeNotificationConnection_tblChangeNotificationQueuedInt" Member="tblChangeNotificationQueuedInts" ThisKey="ConnectionId" OtherKey="ConnectionId" Type="tblChangeNotificationQueuedInt" />
+      <Association Name="tblChangeNotificationConnection_tblChangeNotificationQueuedString" Member="tblChangeNotificationQueuedStrings" ThisKey="ConnectionId" OtherKey="ConnectionId" Type="tblChangeNotificationQueuedString" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationConnection" Member="tblChangeNotificationProcessor" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationProcessor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblChangeNotificationProcessor" Member="tblChangeNotificationProcessors">
+    <Type Name="tblChangeNotificationProcessor">
+      <Column Name="ProcessorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ChangeNotificationDataType" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ProcessorName" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="ProcessorStatus" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="NextQueueOrderValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastConsistentDbUtc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationConnection" Member="tblChangeNotificationConnections" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationConnection" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationQueuedGuid" Member="tblChangeNotificationQueuedGuids" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationQueuedGuid" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationQueuedInt" Member="tblChangeNotificationQueuedInts" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationQueuedInt" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationQueuedString" Member="tblChangeNotificationQueuedStrings" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationQueuedString" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblChangeNotificationQueuedGuid" Member="tblChangeNotificationQueuedGuids">
+    <Type Name="tblChangeNotificationQueuedGuid">
+      <Column Name="ProcessorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ConnectionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="QueueOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="tblChangeNotificationConnection_tblChangeNotificationQueuedGuid" Member="tblChangeNotificationConnection" ThisKey="ConnectionId" OtherKey="ConnectionId" Type="tblChangeNotificationConnection" IsForeignKey="true" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationQueuedGuid" Member="tblChangeNotificationProcessor" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationProcessor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblChangeNotificationQueuedInt" Member="tblChangeNotificationQueuedInts">
+    <Type Name="tblChangeNotificationQueuedInt">
+      <Column Name="ProcessorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ConnectionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="QueueOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblChangeNotificationConnection_tblChangeNotificationQueuedInt" Member="tblChangeNotificationConnection" ThisKey="ConnectionId" OtherKey="ConnectionId" Type="tblChangeNotificationConnection" IsForeignKey="true" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationQueuedInt" Member="tblChangeNotificationProcessor" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationProcessor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblChangeNotificationQueuedString" Member="tblChangeNotificationQueuedStrings">
+    <Type Name="tblChangeNotificationQueuedString">
+      <Column Name="ProcessorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ConnectionId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="QueueOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Association Name="tblChangeNotificationConnection_tblChangeNotificationQueuedString" Member="tblChangeNotificationConnection" ThisKey="ConnectionId" OtherKey="ConnectionId" Type="tblChangeNotificationConnection" IsForeignKey="true" />
+      <Association Name="tblChangeNotificationProcessor_tblChangeNotificationQueuedString" Member="tblChangeNotificationProcessor" ThisKey="ProcessorId" OtherKey="ProcessorId" Type="tblChangeNotificationProcessor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContent" Member="tblContents">
+    <Type Name="tblContent">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkContentTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkParentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ArchiveContentGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="CreatorName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ContentGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisibleInMenu" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Deleted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ChildOrderRule" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PeerOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContentAssetsID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ContentOwnerID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DeletedBy" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DeletedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fkMasterLanguageBranchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContentPath" Type="System.String" DbType="VarChar(900) NOT NULL" CanBeNull="false" />
+      <Column Name="ContentType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsLeafNode" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblContent_tblContent" Member="tblContents" ThisKey="pkID" OtherKey="fkParentID" Type="tblContent" />
+      <Association Name="tblContent_tblContentAccess" Member="tblContentAccesses" ThisKey="pkID" OtherKey="fkContentID" Type="tblContentAccess" />
+      <Association Name="tblContent_tblContentCategory" Member="tblContentCategories" ThisKey="pkID" OtherKey="fkContentID" Type="tblContentCategory" />
+      <Association Name="tblContent_tblContentLanguage" Member="tblContentLanguages" ThisKey="pkID" OtherKey="fkContentID" Type="tblContentLanguage" />
+      <Association Name="tblContent_tblContentLanguageSetting" Member="tblContentLanguageSettings" ThisKey="pkID" OtherKey="fkContentID" Type="tblContentLanguageSetting" />
+      <Association Name="tblContent_tblContentProperty" Member="tblContentProperties" ThisKey="pkID" OtherKey="fkContentID" Type="tblContentProperty" />
+      <Association Name="tblContent_tblContentProperty1" Member="tblContentProperties1" ThisKey="pkID" OtherKey="ContentLink" Type="tblContentProperty" />
+      <Association Name="tblContent_tblContentSoftlink" Member="tblContentSoftlinks" ThisKey="pkID" OtherKey="fkOwnerContentID" Type="tblContentSoftlink" />
+      <Association Name="tblContent_tblWorkContent" Member="tblWorkContents" ThisKey="pkID" OtherKey="fkContentID" Type="tblWorkContent" />
+      <Association Name="tblContent_tblWorkContentProperty" Member="tblWorkContentProperties" ThisKey="pkID" OtherKey="ContentLink" Type="tblWorkContentProperty" />
+      <Association Name="tblContent_tblContent" Member="tblContent1" ThisKey="fkParentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblContentType_tblContent" Member="tblContentType" ThisKey="fkContentTypeID" OtherKey="pkID" Type="tblContentType" IsForeignKey="true" />
+      <Association Name="tblLanguageBranch_tblContent" Member="tblLanguageBranch" ThisKey="fkMasterLanguageBranchID" OtherKey="pkID" Type="tblLanguageBranch" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentAccess" Member="tblContentAccesses">
+    <Type Name="tblContentAccess">
+      <Column Name="fkContentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IsRole" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccessMask" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblContent_tblContentAccess" Member="tblContent" ThisKey="fkContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentCategory" Member="tblContentCategories">
+    <Type Name="tblContentCategory">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkContentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkLanguageBranchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScopeName" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Association Name="tblCategory_tblContentCategory" Member="tblCategory" ThisKey="fkCategoryID" OtherKey="pkID" Type="tblCategory" IsForeignKey="true" />
+      <Association Name="tblContent_tblContentCategory" Member="tblContent" ThisKey="fkContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentLanguage" Member="tblContentLanguages">
+    <Type Name="tblContentLanguage">
+      <Column Name="fkContentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fkLanguageBranchID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ContentLinkGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="fkFrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatorName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ChangedByName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ContentGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="URLSegment" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LinkURL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BlobUri" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ThumbnailUri" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ExternalURL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AutomaticLink" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="FetchData" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Changed" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Saved" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartPublish" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StopPublish" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DelayPublishUntil" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblContent_tblContentLanguage" Member="tblContent" ThisKey="fkContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblFrame_tblContentLanguage" Member="tblFrame" ThisKey="fkFrameID" OtherKey="pkID" Type="tblFrame" IsForeignKey="true" />
+      <Association Name="tblLanguageBranch_tblContentLanguage" Member="tblLanguageBranch" ThisKey="fkLanguageBranchID" OtherKey="pkID" Type="tblLanguageBranch" IsForeignKey="true" />
+      <Association Name="tblWorkContent_tblContentLanguage" Member="tblWorkContent" ThisKey="Version" OtherKey="pkID" Type="tblWorkContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentLanguageSetting" Member="tblContentLanguageSettings">
+    <Type Name="tblContentLanguageSetting">
+      <Column Name="fkContentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fkLanguageBranchID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fkReplacementBranchID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LanguageBranchFallback" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblContent_tblContentLanguageSetting" Member="tblContent" ThisKey="fkContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblLanguageBranch_tblContentLanguageSetting" Member="tblLanguageBranch" ThisKey="fkLanguageBranchID" OtherKey="pkID" Type="tblLanguageBranch" IsForeignKey="true" />
+      <Association Name="tblLanguageBranch_tblContentLanguageSetting1" Member="tblLanguageBranch1" ThisKey="fkReplacementBranchID" OtherKey="pkID" Type="tblLanguageBranch" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentProperty" Member="tblContentProperties">
+    <Type Name="tblContentProperty">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkPropertyDefinitionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkContentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkLanguageBranchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScopeName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="guid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FloatNumber" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ContentType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContentLink" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="String" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="LongString" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LongStringLength" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LinkGuid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="tblContent_tblContentProperty" Member="tblContent" ThisKey="fkContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblContent_tblContentProperty1" Member="tblContent1" ThisKey="ContentLink" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblLanguageBranch_tblContentProperty" Member="tblLanguageBranch" ThisKey="fkLanguageBranchID" OtherKey="pkID" Type="tblLanguageBranch" IsForeignKey="true" />
+      <Association Name="tblPropertyDefinition_tblContentProperty" Member="tblPropertyDefinition" ThisKey="fkPropertyDefinitionID" OtherKey="pkID" Type="tblPropertyDefinition" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentSoftlink" Member="tblContentSoftlinks">
+    <Type Name="tblContentSoftlink">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkOwnerContentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkReferencedContentGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="OwnerLanguageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReferencedLanguageID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LinkURL" Type="System.String" DbType="NVarChar(2048) NOT NULL" CanBeNull="false" />
+      <Column Name="LinkType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LinkProtocol" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ContentLink" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LastCheckedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FirstDateBroken" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HttpStatusCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LinkStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblContent_tblContentSoftlink" Member="tblContent" ThisKey="fkOwnerContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentType" Member="tblContentTypes">
+    <Type Name="tblContentType">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ContentTypeGUID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultWebFormTemplate" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="DefaultMvcController" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="DefaultMvcPartialView" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Filename" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ModelType" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="IdString" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Available" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SortOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MetaDataInherit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MetaDataDefault" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="WorkflowEditFields" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ACL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ContentType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblContentType_tblContent" Member="tblContents" ThisKey="pkID" OtherKey="fkContentTypeID" Type="tblContent" />
+      <Association Name="tblContentType_tblContentTypeDefault" Member="tblContentTypeDefaults" ThisKey="pkID" OtherKey="fkContentTypeID" Type="tblContentTypeDefault" />
+      <Association Name="tblContentType_tblContentTypeToContentType" Member="tblContentTypeToContentTypes" ThisKey="pkID" OtherKey="fkContentTypeParentID" Type="tblContentTypeToContentType" />
+      <Association Name="tblContentType_tblContentTypeToContentType1" Member="tblContentTypeToContentTypes1" ThisKey="pkID" OtherKey="fkContentTypeChildID" Type="tblContentTypeToContentType" />
+      <Association Name="tblContentType_tblPropertyDefinition" Member="tblPropertyDefinitions" ThisKey="pkID" OtherKey="fkContentTypeID" Type="tblPropertyDefinition" />
+      <Association Name="tblContentType_tblWorkContentProperty" Member="tblWorkContentProperties" ThisKey="pkID" OtherKey="ContentType" Type="tblWorkContentProperty" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentTypeDefault" Member="tblContentTypeDefaults">
+    <Type Name="tblContentTypeDefault">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkContentTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkContentLinkID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fkFrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fkArchiveContentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VisibleInMenu" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartPublishOffsetValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartPublishOffsetType" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="StopPublishOffsetValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StopPublishOffsetType" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="ChildOrderRule" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PeerOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartPublishOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StopPublishOffset" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="tblContentType_tblContentTypeDefault" Member="tblContentType" ThisKey="fkContentTypeID" OtherKey="pkID" Type="tblContentType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblContentTypeToContentType" Member="tblContentTypeToContentTypes">
+    <Type Name="tblContentTypeToContentType">
+      <Column Name="fkContentTypeParentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fkContentTypeChildID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Access" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Availability" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Allow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblContentType_tblContentTypeToContentType" Member="tblContentType" ThisKey="fkContentTypeParentID" OtherKey="pkID" Type="tblContentType" IsForeignKey="true" />
+      <Association Name="tblContentType_tblContentTypeToContentType1" Member="tblContentType1" ThisKey="fkContentTypeChildID" OtherKey="pkID" Type="tblContentType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEntityGuid" Member="tblEntityGuids">
+    <Type Name="tblEntityGuid">
+      <Column Name="intObjectTypeID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="intObjectID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="unqID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblEntityType" Member="tblEntityTypes">
+    <Type Name="tblEntityType">
+      <Column Name="intID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="strName" Type="System.String" DbType="VarChar(400) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFrame" Member="tblFrames">
+    <Type Name="tblFrame">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FrameName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="FrameDescription" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SystemFrame" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblFrame_tblContentLanguage" Member="tblContentLanguages" ThisKey="pkID" OtherKey="fkFrameID" Type="tblContentLanguage" />
+      <Association Name="tblFrame_tblWorkContent" Member="tblWorkContents" ThisKey="pkID" OtherKey="fkFrameID" Type="tblWorkContent" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblHostDefinition" Member="tblHostDefinitions">
+    <Type Name="tblHostDefinition">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkSiteID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Https" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="tblSiteDefinition_tblHostDefinition" Member="tblSiteDefinition" ThisKey="fkSiteID" OtherKey="pkID" Type="tblSiteDefinition" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblIndexRequestLog" Member="tblIndexRequestLogs">
+    <Type Name="tblIndexRequestLog">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean02" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean03" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean04" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean05" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer04" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer05" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer06" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer07" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer08" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer09" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long03" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long04" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long05" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime02" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime03" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime04" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime05" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid02" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid03" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float04" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float05" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float06" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float07" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="String01" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String02" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String03" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String04" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String05" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String06" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String07" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String08" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String09" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String10" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary02" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary03" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary04" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary05" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Indexed_Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Indexed_Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Indexed_Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Indexed_Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_String01" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String02" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String03" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(900)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="tblBigTableIdentity_tblIndexRequestLog" Member="tblBigTableIdentity" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLanguageBranch" Member="tblLanguageBranches">
+    <Type Name="tblLanguageBranch">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LanguageID" Type="System.String" DbType="NChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SortIndex" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SystemIconPath" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="URLSegment" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ACL" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblLanguageBranch_tblContent" Member="tblContents" ThisKey="pkID" OtherKey="fkMasterLanguageBranchID" Type="tblContent" />
+      <Association Name="tblLanguageBranch_tblContentLanguage" Member="tblContentLanguages" ThisKey="pkID" OtherKey="fkLanguageBranchID" Type="tblContentLanguage" />
+      <Association Name="tblLanguageBranch_tblContentLanguageSetting" Member="tblContentLanguageSettings" ThisKey="pkID" OtherKey="fkLanguageBranchID" Type="tblContentLanguageSetting" />
+      <Association Name="tblLanguageBranch_tblContentLanguageSetting1" Member="tblContentLanguageSettings1" ThisKey="pkID" OtherKey="fkReplacementBranchID" Type="tblContentLanguageSetting" />
+      <Association Name="tblLanguageBranch_tblContentProperty" Member="tblContentProperties" ThisKey="pkID" OtherKey="fkLanguageBranchID" Type="tblContentProperty" />
+      <Association Name="tblLanguageBranch_tblWorkContent" Member="tblWorkContents" ThisKey="pkID" OtherKey="fkLanguageBranchID" Type="tblWorkContent" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblMappedIdentity" Member="tblMappedIdentities">
+    <Type Name="tblMappedIdentity">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Provider" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ProviderUniqueId" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Column Name="ContentGuid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ExistingContentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ExistingCustomProvider" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblNotificationMessage" Member="tblNotificationMessages">
+    <Type Name="tblNotificationMessage">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Sender" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Recipient" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Channel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sent" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="SendAt" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Saved" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="[Read]" Member="Read" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblNotificationSubscription" Member="tblNotificationSubscriptions">
+    <Type Name="tblNotificationSubscription">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="SubscriptionKey" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Active" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPlugIn" Member="tblPlugIns">
+    <Type Name="tblPlugIn">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AssemblyName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Settings" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Saved" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblPlugIn_tblTask" Member="tblTasks" ThisKey="pkID" OtherKey="fkPlugInID" Type="tblTask" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblProject" Member="tblProjects">
+    <Type Name="tblProject">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IsPublic" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PublishingTrackingToken" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DelayPublishUntil" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblProject_tblProjectItem" Member="tblProjectItems" ThisKey="pkID" OtherKey="fkProjectID" Type="tblProjectItem" />
+      <Association Name="tblProject_tblProjectMember" Member="tblProjectMembers" ThisKey="pkID" OtherKey="fkProjectID" Type="tblProjectMember" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblProjectItem" Member="tblProjectItems">
+    <Type Name="tblProjectItem">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContentLinkID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContentLinkWorkID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ContentLinkProvider" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="tblProject_tblProjectItem" Member="tblProject" ThisKey="fkProjectID" OtherKey="pkID" Type="tblProject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblProjectMember" Member="tblProjectMembers">
+    <Type Name="tblProjectMember">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="tblProject_tblProjectMember" Member="tblProject" ThisKey="fkProjectID" OtherKey="pkID" Type="tblProject" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPropertyDefinition" Member="tblPropertyDefinitions">
+    <Type Name="tblPropertyDefinition">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkContentTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fkPropertyDefinitionTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FieldOrder" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Property" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Required" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Advanced" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Searchable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EditCaption" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="HelpText" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="ObjectProgID" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DefaultValueType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LongStringSettings" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SettingsID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="LanguageSpecific" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayEditUI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ExistsOnModel" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblPropertyDefinition_tblContentProperty" Member="tblContentProperties" ThisKey="pkID" OtherKey="fkPropertyDefinitionID" Type="tblContentProperty" />
+      <Association Name="tblPropertyDefinition_tblWorkContentProperty" Member="tblWorkContentProperties" ThisKey="pkID" OtherKey="fkPropertyDefinitionID" Type="tblWorkContentProperty" />
+      <Association Name="tblContentType_tblPropertyDefinition" Member="tblContentType" ThisKey="fkContentTypeID" OtherKey="pkID" Type="tblContentType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPropertyDefinitionDefault" Member="tblPropertyDefinitionDefaults">
+    <Type Name="tblPropertyDefinitionDefault">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkPropertyDefinitionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FloatNumber" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ContentType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContentLink" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="String" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="LongString" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LinkGuid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPropertyDefinitionGroup" Member="tblPropertyDefinitionGroups">
+    <Type Name="tblPropertyDefinitionGroup">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SystemGroup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Access" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GroupVisible" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GroupOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DisplayName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblPropertyDefinitionType" Member="tblPropertyDefinitionTypes">
+    <Type Name="tblPropertyDefinitionType">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Property" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="AssemblyName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="fkContentTypeGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblRemoteSite" Member="tblRemoteSites">
+    <Type Name="tblRemoteSite">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IsTrusted" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Domain" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AllowUrlLookup" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblScheduledItem" Member="tblScheduledItems">
+    <Type Name="tblScheduledItem">
+      <Column Name="pkID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LastExec" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastText" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="NextExec" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DatePart" Type="System.String" DbType="NChar(2)" CanBeNull="true" />
+      <Column Name="Interval" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MethodName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="fStatic" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TypeName" Type="System.String" DbType="NVarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="AssemblyName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="InstanceData" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="IsRunning" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CurrentStatusMessage" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="LastPing" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblScheduledItem_tblScheduledItemLog" Member="tblScheduledItemLogs" ThisKey="pkID" OtherKey="fkScheduledItemId" Type="tblScheduledItemLog" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblScheduledItemLog" Member="tblScheduledItemLogs">
+    <Type Name="tblScheduledItemLog">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkScheduledItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="[Exec]" Member="Exec" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Association Name="tblScheduledItem_tblScheduledItemLog" Member="tblScheduledItem" ThisKey="fkScheduledItemId" OtherKey="pkID" Type="tblScheduledItem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSiteConfig" Member="tblSiteConfigs">
+    <Type Name="tblSiteConfig">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SiteID" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="PropertyValue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSiteDefinition" Member="tblSiteDefinitions">
+    <Type Name="tblSiteDefinition">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UniqueId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="StartPage" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SiteUrl" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SiteAssetsRoot" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Association Name="tblSiteDefinition_tblHostDefinition" Member="tblHostDefinitions" ThisKey="pkID" OtherKey="fkSiteID" Type="tblHostDefinition" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSynchedUser" Member="tblSynchedUsers">
+    <Type Name="tblSynchedUser">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredUserName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GivenName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LoweredGivenName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LoweredSurname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Metadata" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="tblSynchedUser_tblSynchedUserRelation" Member="tblSynchedUserRelations" ThisKey="pkID" OtherKey="fkSynchedUser" Type="tblSynchedUserRelation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSynchedUserRelations" Member="tblSynchedUserRelations">
+    <Type Name="tblSynchedUserRelation">
+      <Column Name="fkSynchedUser" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fkSynchedRole" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="tblSynchedUser_tblSynchedUserRelation" Member="tblSynchedUser" ThisKey="fkSynchedUser" OtherKey="pkID" Type="tblSynchedUser" IsForeignKey="true" />
+      <Association Name="tblSynchedUserRole_tblSynchedUserRelation" Member="tblSynchedUserRole" ThisKey="fkSynchedRole" OtherKey="pkID" Type="tblSynchedUserRole" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSynchedUserRole" Member="tblSynchedUserRoles">
+    <Type Name="tblSynchedUserRole">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LoweredRoleName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Enabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="tblSynchedUserRole_tblSynchedUserRelation" Member="tblSynchedUserRelations" ThisKey="pkID" OtherKey="fkSynchedRole" Type="tblSynchedUserRelation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSystemBigTable" Member="tblSystemBigTables">
+    <Type Name="tblSystemBigTable">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean02" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean03" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean04" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean05" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer04" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer05" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer06" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer07" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer08" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer09" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long03" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long04" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long05" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime02" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime03" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime04" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime05" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid02" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid03" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float04" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float05" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float06" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float07" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="String01" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String02" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String03" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String04" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String05" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String06" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String07" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String08" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String09" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String10" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary02" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary03" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary04" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary05" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Indexed_Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Indexed_Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Indexed_Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Indexed_Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_String01" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String02" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String03" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(900)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Decimal01" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="Decimal02" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Column Name="Indexed_Decimal01" Type="System.Decimal" DbType="Decimal(18,3)" CanBeNull="true" />
+      <Association Name="tblBigTableIdentity_tblSystemBigTable" Member="tblBigTableIdentity" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTask" Member="tblTasks">
+    <Type Name="tblTask">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="DueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OwnerName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="AssignedToName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="AssignedIsRole" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="fkPlugInID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Activity" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Changed" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="WorkflowInstanceId" Type="System.String" DbType="NVarChar(36)" CanBeNull="true" />
+      <Column Name="EventActivityName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="tblPlugIn_tblTask" Member="tblPlugIn" ThisKey="fkPlugInID" OtherKey="pkID" Type="tblPlugIn" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTaskInformation" Member="tblTaskInformations">
+    <Type Name="tblTaskInformation">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean02" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="String01" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Indexed_Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Indexed_DateTime02" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Indexed_Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Indexed_String01" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String02" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Association Name="tblBigTableIdentity_tblTaskInformation" Member="tblBigTableIdentity" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblTree" Member="tblTrees">
+    <Type Name="tblTree">
+      <Column Name="fkParentID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="fkChildID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NestingLevel" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUniqueSequence" Member="tblUniqueSequences">
+    <Type Name="tblUniqueSequence">
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUserPermission" Member="tblUserPermissions">
+    <Type Name="tblUserPermission">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IsRole" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Permission" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="GroupName" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblVisitorGroupStatistic" Member="tblVisitorGroupStatistics">
+    <Type Name="tblVisitorGroupStatistic">
+      <Column Name="pkId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Row" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StoreName" Type="System.String" DbType="NVarChar(375) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemType" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean02" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean03" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean04" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Boolean05" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer04" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer05" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer06" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer07" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer08" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer09" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Integer10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long03" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long04" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Long05" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime02" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime03" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime04" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTime05" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid02" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Guid03" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float04" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float05" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float06" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Float07" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="String01" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String02" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String03" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String04" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String05" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String06" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String07" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String08" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String09" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="String10" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary02" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary03" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary04" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Binary05" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Indexed_Boolean01" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Indexed_Integer01" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer02" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Integer03" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Indexed_Long01" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_Long02" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Indexed_DateTime01" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Indexed_Guid01" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Indexed_Float01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_Float03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Indexed_String01" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String02" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_String03" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="Indexed_Binary01" Type="System.Data.Linq.Binary" DbType="VarBinary(900)" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="tblBigTableIdentity_tblVisitorGroupStatistic" Member="tblBigTableIdentity" ThisKey="pkId" OtherKey="pkId" Type="tblBigTableIdentity" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblWorkContent" Member="tblWorkContents">
+    <Type Name="tblWorkContent">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkContentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkMasterVersionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContentLinkGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="fkFrameID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ArchiveContentGUID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ChangedByName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NewStatusByName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="URLSegment" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="LinkURL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="BlobUri" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ThumbnailUri" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ExternalURL" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="VisibleInMenu" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LinkType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Saved" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="StartPublish" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StopPublish" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ChildOrderRule" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PeerOrder" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChangedOnPublish" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RejectComment" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="fkLanguageBranchID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CommonDraft" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DelayPublishUntil" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="tblWorkContent_tblContentLanguage" Member="tblContentLanguages" ThisKey="pkID" OtherKey="Version" Type="tblContentLanguage" />
+      <Association Name="tblWorkContent_tblWorkContent" Member="tblWorkContents" ThisKey="pkID" OtherKey="fkMasterVersionID" Type="tblWorkContent" />
+      <Association Name="tblWorkContent_tblWorkContentCategory" Member="tblWorkContentCategories" ThisKey="pkID" OtherKey="fkWorkContentID" Type="tblWorkContentCategory" />
+      <Association Name="tblWorkContent_tblWorkContentProperty" Member="tblWorkContentProperties" ThisKey="pkID" OtherKey="fkWorkContentID" Type="tblWorkContentProperty" />
+      <Association Name="tblContent_tblWorkContent" Member="tblContent" ThisKey="fkContentID" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblFrame_tblWorkContent" Member="tblFrame" ThisKey="fkFrameID" OtherKey="pkID" Type="tblFrame" IsForeignKey="true" />
+      <Association Name="tblLanguageBranch_tblWorkContent" Member="tblLanguageBranch" ThisKey="fkLanguageBranchID" OtherKey="pkID" Type="tblLanguageBranch" IsForeignKey="true" />
+      <Association Name="tblWorkContent_tblWorkContent" Member="tblWorkContent1" ThisKey="fkMasterVersionID" OtherKey="pkID" Type="tblWorkContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblWorkContentCategory" Member="tblWorkContentCategories">
+    <Type Name="tblWorkContentCategory">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkWorkContentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScopeName" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Association Name="tblCategory_tblWorkContentCategory" Member="tblCategory" ThisKey="fkCategoryID" OtherKey="pkID" Type="tblCategory" IsForeignKey="true" />
+      <Association Name="tblWorkContent_tblWorkContentCategory" Member="tblWorkContent" ThisKey="fkWorkContentID" OtherKey="pkID" Type="tblWorkContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblWorkContentProperty" Member="tblWorkContentProperties">
+    <Type Name="tblWorkContentProperty">
+      <Column Name="pkID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fkPropertyDefinitionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fkWorkContentID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ScopeName" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="guid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Boolean" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Number" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FloatNumber" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ContentType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContentLink" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="String" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="LongString" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LinkGuid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="tblContent_tblWorkContentProperty" Member="tblContent" ThisKey="ContentLink" OtherKey="pkID" Type="tblContent" IsForeignKey="true" />
+      <Association Name="tblContentType_tblWorkContentProperty" Member="tblContentType" ThisKey="ContentType" OtherKey="pkID" Type="tblContentType" IsForeignKey="true" />
+      <Association Name="tblPropertyDefinition_tblWorkContentProperty" Member="tblPropertyDefinition" ThisKey="fkPropertyDefinitionID" OtherKey="pkID" Type="tblPropertyDefinition" IsForeignKey="true" />
+      <Association Name="tblWorkContent_tblWorkContentProperty" Member="tblWorkContent" ThisKey="fkWorkContentID" OtherKey="pkID" Type="tblWorkContent" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

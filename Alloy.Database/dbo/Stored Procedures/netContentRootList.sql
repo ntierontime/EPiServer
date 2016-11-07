@@ -1,0 +1,13 @@
+﻿CREATE PROCEDURE dbo.netContentRootList
+AS
+BEGIN
+	SET NOCOUNT ON
+	SELECT 
+		pkID as RootPage from tblContent WHERE ContentGUID = '43F936C9-9B23-4EA3-97B2-61C538AD07C9'
+	SELECT
+		pkID as WasteBasket from tblContent WHERE ContentGUID = '2F40BA47-F4FC-47AE-A244-0B909D4CF988' 
+	SELECT
+		pkID as GlobalAssets from tblContent WHERE ContentGUID = 'E56F85D0-E833-4E02-976A-2D11FE4D598C' 
+	SELECT
+		pkID as ContentAssets from tblContent WHERE ContentGUID = '99D57529-61F2-47C0-80C0-F91ECA6AF1AC'
+END

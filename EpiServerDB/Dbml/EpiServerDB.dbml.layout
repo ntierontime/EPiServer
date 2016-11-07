@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 29, 101.875" name="EpiServerDB">
+  <DataContextMoniker Name="/EpiServerDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4201a3da-c588-497a-bacd-2f005767dea7" absoluteBounds="20.75, 9.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/EpiServerDBDataContext/AspNetRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff691e7a-52eb-460b-9b77-ba9c30ba075c" absoluteBounds="20.765, 10.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="58fb3382-3adf-4aaa-bbb1-a7b2f8a1a613" absoluteBounds="17.5, 34.25, 2, 6.9630354817708309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblXFormData" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b1665ba-a92a-430d-8853-5e8bda0b7b28" absoluteBounds="17.515, 34.71, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97c8d908-57d4-44eb-983a-00b59626e932" absoluteBounds="23.5, 6.5, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/EpiServerDBDataContext/AspNetUserClaim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14f25368-8c91-491f-b009-bdceab438c95" absoluteBounds="23.515, 6.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a357a950-dd2c-49e9-a4d3-b018af603ca6" absoluteBounds="23.5, 4.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/EpiServerDBDataContext/AspNetUserLogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5470fea3-dff8-4bd3-a6e2-999d07149077" absoluteBounds="23.515, 4.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3099935-22fd-4761-8f91-395582621b13" absoluteBounds="23.5, 1.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EpiServerDBDataContext/AspNetUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01d4f523-85bc-4e0f-b213-bdc8753cfa14" absoluteBounds="23.515, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0eabecc6-c29d-44ef-b4dd-ee81adcb2b5d" absoluteBounds="20.75, 2.125, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/AspNetUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a418ab8-0d98-452c-9bd6-4b1183e528b0" absoluteBounds="20.765, 2.585, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e3259fc3-16d8-4c98-bc2c-a8bc4bff5269" absoluteBounds="20.75, 19.125, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblActivityLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a6849d00-32b9-46db-b776-b525458a8ea6" absoluteBounds="20.765, 19.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b89d70ec-ad4c-4682-a252-f3daf398ba68" absoluteBounds="23.5, 18.25, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblActivityLogAssociation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="827389c8-2081-436d-b440-967a7aeac0cb" absoluteBounds="23.515, 18.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b91d577-be94-415f-93fe-e0514e798f29" absoluteBounds="23.5, 20.25, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblActivityLogComment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8abb23d2-352d-469f-8e53-931e4bd7cce4" absoluteBounds="23.515, 20.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65437e54-be3e-47ef-a1c7-cae5bc7d9f48" absoluteBounds="17.5, 71.625, 2, 14.655092773437502">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblBigTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7fbf0935-3bfd-461d-8040-4af427f76fd5" absoluteBounds="17.515, 72.085, 1.9700000000000002, 14.0950927734375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" absoluteBounds="14.75, 62.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5805336-ecfe-4045-b098-2c68cafec269" absoluteBounds="14.765, 62.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e74281d6-3294-4044-b276-e7b69a4a6d0c" absoluteBounds="17.5, 29, 2, 4.4631168619791737">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblBigTableReference" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f21c0b1-bfe3-4d97-857b-2ef00c07b075" absoluteBounds="17.515, 29.46, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0368bae2-0a13-4888-8d2a-f865583c8afa" absoluteBounds="6.75, 26.625, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblBigTableStoreConfig" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5d834c9d-f19b-4ae4-b2c3-1c9e7f1ef31a" absoluteBounds="6.765, 27.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c9c012b-0b8b-467d-b631-71dd22200e6b" absoluteBounds="9.5, 26.75, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblBigTableStoreInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a4b83c6-401a-47c5-a99c-aecc458ec6c1" absoluteBounds="9.515, 27.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b349d770-d718-4485-bff6-e15f8fca945b" absoluteBounds="6.5, 4.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="825783f1-380c-4923-9a88-86e05e6d1872" absoluteBounds="6.515, 4.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb709ba4-66f8-473d-ae7f-f6524ffa07a1" absoluteBounds="15.5, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblChangeNotificationConnection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1964156-f8da-4e3e-9d25-5ec33e2dfea9" absoluteBounds="15.515, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4f2ea99-7c19-4b96-a942-be4b3305086d" absoluteBounds="12.75, 3.5, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblChangeNotificationProcessor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff017703-9c4e-4200-b1a2-0fb967cfdd6f" absoluteBounds="12.765, 3.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a7a4113-d4f4-4b0b-8bfb-e5a5ec901e9c" absoluteBounds="18.25, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblChangeNotificationQueuedGuid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="949bbcd5-c758-4e3f-947b-183eb01e57b0" absoluteBounds="18.265, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc2abc74-2d4f-4b66-aa50-e5942ce9a549" absoluteBounds="18.25, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblChangeNotificationQueuedInt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8bc514b-ab42-4f7a-b995-7e3c5a1f0f89" absoluteBounds="18.265, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fad721c1-2f71-4cff-b209-3e2cdd8504b3" absoluteBounds="18.25, 6.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblChangeNotificationQueuedString" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e18bd62-04d3-435c-8d60-10e2c07c2fd6" absoluteBounds="18.265, 7.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" absoluteBounds="3.5, 14.625, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="633f16b9-3669-4091-96a9-69d3780d15ab" absoluteBounds="3.515, 15.085, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d65046a-e95b-4059-a6e8-492f20b8af98" absoluteBounds="6.25, 13.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentAccess" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a160af2-a0bd-411d-b920-c6d426496f54" absoluteBounds="6.265, 14.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09eb401a-3fc4-45b1-9c25-d9c3843e450b" absoluteBounds="9.25, 15.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1e06fce-763f-4e2c-9bc3-d1ce5a714634" absoluteBounds="9.265, 16.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="941f47f7-d291-4951-ae71-98ebab0f6fe2" absoluteBounds="9, 21.125, 2, 5.2323225911458309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentLanguage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="01db5c78-b1d2-4719-88d8-7a68e665d32b" absoluteBounds="9.015, 21.585, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="663ee9e4-9864-4cbc-8772-93a2fa6cf3f5" absoluteBounds="3.875, 20.75, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentLanguageSetting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f5c3166-ea47-4fb1-951b-0731d16288a7" absoluteBounds="3.8899999999999997, 21.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0816c4c2-e220-4367-8e00-db544291c4d2" absoluteBounds="9.25, 10.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentProperty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="effe678b-832a-44d5-8ecc-0a29dcb2363b" absoluteBounds="9.265, 11.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddb770eb-25d4-4da6-86ea-c85747ce8d52" absoluteBounds="6, 19.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentSoftlink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa5e2e13-7ba3-4c7f-a0cd-0e7c5917f057" absoluteBounds="6.015, 20.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c429de90-2efe-4847-83da-46df202d951e" absoluteBounds="0.75, 9.5, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="005f30f3-0f27-4fdb-8347-a4c32fd5819a" absoluteBounds="0.765, 9.96, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a938ba71-799f-46c1-80b6-01abaf3e4c49" absoluteBounds="3.5, 4.125, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentTypeDefault" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24cfe9bb-4680-4b48-bb25-24f9a2141516" absoluteBounds="3.515, 4.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c24d467-b587-46e8-bba6-1b164a4867af" absoluteBounds="3.5, 8.625, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblContentTypeToContentType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f54a1c2-bd26-44de-9fc2-2700a646fd99" absoluteBounds="3.515, 9.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f646906f-dbf5-4c59-a1af-9b57643d4f9e" absoluteBounds="6.75, 1, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblEntityGuid" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4606cbf3-bcda-47c4-a419-c1d75ed78b7a" absoluteBounds="6.765, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a6250ae-8dc4-4479-905f-6297b6680ae0" absoluteBounds="9.75, 1, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblEntityType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f1ef890-e783-4417-b774-d5e589f229a5" absoluteBounds="9.765, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6485e0a0-1056-4381-b778-e2b24fc806d4" absoluteBounds="12.25, 20.75, 2, 1.5785953776041657">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblFrame" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a55c329-e6e2-455f-bd52-f9df428542d8" absoluteBounds="12.265, 21.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b4f5436-c7fa-4307-b1cc-4cc9aa4bec7b" absoluteBounds="15.5, 10.25, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblHostDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8cc2ed5-c1be-4400-bdf5-35bb2f4641c4" absoluteBounds="15.515, 10.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b708923-1ffa-4c60-9e4a-6f807d260e38" absoluteBounds="17.5, 42, 2, 14.078188476562502">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblIndexRequestLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="26621902-0f80-4d78-8e74-3b0804d2308a" absoluteBounds="17.515, 42.46, 1.9700000000000002, 13.5181884765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c7d7690c-3662-45c2-86ea-02061ba037a3" absoluteBounds="0.75, 15.625, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblLanguageBranch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3891007f-a7ca-4ba8-a045-cd6ab287f703" absoluteBounds="0.765, 16.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90c8481b-17e1-46d7-ba98-ec396ce670b8" absoluteBounds="12.75, 7, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblMappedIdentity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f709dbb3-c187-4a32-a5ae-27a7e282e671" absoluteBounds="12.765, 7.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82a6077f-dfb1-45b4-8854-ad3acb1b7c84" absoluteBounds="14.75, 19, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblNotificationMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4a62760-38a5-4f69-8bb9-75ba901e7939" absoluteBounds="14.765, 19.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ceb7e681-ce7c-4d10-bb9b-1d6d0c9617e0" absoluteBounds="12.75, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblNotificationSubscription" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9afdc051-9c38-4dbb-af74-3578759d5bec" absoluteBounds="12.765, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91ea94dc-6f11-4465-9b57-760a0a74c22c" absoluteBounds="20.75, 24.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblPlugIn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b917c8c-c627-49e8-9532-390a13b3f3d6" absoluteBounds="20.765, 24.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab8cbb31-a3c1-4398-8fc8-cf4df22a76f9" absoluteBounds="20.75, 13.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblProject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a52433dd-70ee-4949-b444-7a376171f6c3" absoluteBounds="20.765, 13.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c0b4e42-e63d-462d-9322-8e0df6809a08" absoluteBounds="23.5, 14.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblProjectItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6efc8f72-1b48-402a-8df7-08eddcb2c309" absoluteBounds="23.515, 15.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6e8d985-b57a-4449-b84c-27963fc3bedf" absoluteBounds="23.5, 12.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblProjectMember" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f7d6aab1-6d29-4e1f-805c-9c2defc2d143" absoluteBounds="23.515, 12.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8ab44c3-3879-4003-8e7c-7e21ef5fd721" absoluteBounds="6.5, 8.625, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblPropertyDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f859331-f2bf-41e7-8c00-54b5bee89293" absoluteBounds="6.515, 9.085, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7cbe12c7-3af2-4abc-af22-4a2c4dc266d2" absoluteBounds="0.75, 20, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblPropertyDefinitionDefault" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9fde044b-6d57-4944-b73c-550b488c1547" absoluteBounds="0.765, 20.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff5b1616-d350-4da4-b9da-759a56c0a070" absoluteBounds="11.75, 23, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblPropertyDefinitionGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="784564dd-7831-4b1c-9190-9f2e7c5d6b42" absoluteBounds="11.765, 23.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95ca33e7-3209-4017-9ec1-5e5253f9a4db" absoluteBounds="14.75, 13, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblPropertyDefinitionType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="97d848cf-5b6a-4c55-86b5-ee8c6da51fea" absoluteBounds="14.765, 13.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57adbaba-f266-48be-91e8-5d352d204632" absoluteBounds="23.75, 9, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblRemoteSite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ca6031b-3e14-4017-858d-b8231531551c" absoluteBounds="23.765, 9.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6da73ac0-4aa9-4cb3-adef-8d0f583cf36c" absoluteBounds="0.75, 26.375, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblScheduledItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="151d757a-9377-4b59-9ab2-07cf9fd9e401" absoluteBounds="0.765, 26.835, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81cc5b3d-67e2-4e50-9b9d-8b3629e75a22" absoluteBounds="3.5, 27.5, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblScheduledItemLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b860080b-6aa6-4eca-b869-61ca11835f3f" absoluteBounds="3.515, 27.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ff39182-3191-4101-92c2-72194a1720b7" absoluteBounds="12.75, 26, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblSiteConfig" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15b828ff-1cd2-42b8-93f1-f1489eeacb05" absoluteBounds="12.765, 26.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dff07f51-c7eb-4639-bc2d-6363f164bb67" absoluteBounds="12.75, 10.25, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblSiteDefinition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6377da80-865e-4529-bd5d-02350faf0578" absoluteBounds="12.765, 10.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="edbaa59b-bbc1-4883-91b2-3db50ee148d5" absoluteBounds="0.75, 5.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblSynchedUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c033447-f8c9-4f26-909c-16bd96691654" absoluteBounds="0.765, 5.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33840c06-68d6-4a75-9f8f-0445532f9113" absoluteBounds="3.5, 1.375, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblSynchedUserRelation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a76c1c0-cfa3-4e90-9b9a-43888c1aabeb" absoluteBounds="3.515, 1.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47f85323-bd76-41c8-ace0-5e8ae49afd6d" absoluteBounds="0.75, 1.25, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblSynchedUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57a3c548-f658-41b4-9795-c1a0d701dfe1" absoluteBounds="0.765, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c65bb2c-77c1-4192-b50c-6fd6ca0aad08" absoluteBounds="17.5, 87, 2, 14.655092773437502">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblSystemBigTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11959173-f0f9-47b7-9fe9-7db6ec2561ca" absoluteBounds="17.515, 87.46, 1.9700000000000002, 14.0950927734375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c257ca01-e2be-434c-8175-6febf9a03f36" absoluteBounds="23.5, 23.25, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblTask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6e2af8a-9cb4-4407-bd9b-d4f76e7b24d4" absoluteBounds="23.515, 23.71, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1adccf8b-84de-438e-8a2c-927ee7e0829a" absoluteBounds="17.5, 24, 2, 4.2708154296875023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblTaskInformation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="54469d74-1edf-47f9-809e-57cb91e96813" absoluteBounds="17.515, 24.46, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dd10f7c9-39ef-45e4-af57-55360c28639f" absoluteBounds="0.75, 24, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblTree" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03ea4462-f70e-495f-85ea-add251c3110b" absoluteBounds="0.765, 24.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dba38499-27ea-4331-87c2-0bb702da94a5" absoluteBounds="26.75, 1, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblUniqueSequence" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d01ace6b-0561-42f2-bd49-ae1c007e6e53" absoluteBounds="26.765, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddfb7ade-7aba-482b-86e1-c1c1197f91eb" absoluteBounds="26.75, 3, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblUserPermission" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b9cec8b-44f8-4545-97ef-0fbb6b2ae95b" absoluteBounds="26.765, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f10650fd-6a49-4a28-acd7-41e6a6aedbdb" absoluteBounds="17.5, 56.75, 2, 14.078188476562495">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblVisitorGroupStatistic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5239913-4423-45ab-96f4-ab8538d7e0fc" absoluteBounds="17.515, 57.21, 1.9700000000000002, 13.5181884765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" absoluteBounds="12.25, 13.625, 2, 6.1938297526041666">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblWorkContent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c679726-559e-4b74-8dc0-700915461bf1" absoluteBounds="12.265, 14.085, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ea2e29d-9614-4bae-a93e-b0e85da06ef2" absoluteBounds="15, 15.875, 2, 1.7708968098958309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblWorkContentCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21524341-0ed5-4642-a4d4-ed717bbcb6d1" absoluteBounds="15.015, 16.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29d8e15a-b331-44e9-9f9a-96d07871daa3" absoluteBounds="18, 15, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/EpiServerDBDataContext/tblWorkContentProperty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bc6bff6e-0c6e-4bcd-bda3-fe0941eb8213" absoluteBounds="18.015, 15.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(22.75 : 9.625); (23.125 : 9.25); (23.125 : 3.19490996880008); (23.5009174557792 : 2.81899251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/AspNetRole/AspNetRole_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="4201a3da-c588-497a-bacd-2f005767dea7" />
+        <classShapeMoniker Id="e3099935-22fd-4761-8f91-395582621b13" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.75 : 6.3958154296875); (21.75 : 7.28929768880208); (23.5 : 7.28929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/AspNetUser/AspNetUser_AspNetUserClaim" />
+      <nodes>
+        <classShapeMoniker Id="0eabecc6-c29d-44ef-b4dd-ee81adcb2b5d" />
+        <classShapeMoniker Id="97c8d908-57d4-44eb-983a-00b59626e932" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 4.94314697265625); (23.0416666666667 : 4.94314697265625 : JumpStart); (23.2083333333333 : 4.94314697265625 : JumpEnd); (23.5 : 4.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/AspNetUser/AspNetUser_AspNetUserLogin" />
+      <nodes>
+        <classShapeMoniker Id="0eabecc6-c29d-44ef-b4dd-ee81adcb2b5d" />
+        <classShapeMoniker Id="a357a950-dd2c-49e9-a4d3-b018af603ca6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 2.47199625651042); (23.5 : 2.47199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/AspNetUser/AspNetUser_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="0eabecc6-c29d-44ef-b4dd-ee81adcb2b5d" />
+        <classShapeMoniker Id="e3099935-22fd-4761-8f91-395582621b13" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.75 : 19.125); (21.75 : 18.6874995); (23.5 : 18.6874995)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblActivityLog/tblActivityLog_tblActivityLogAssociation" />
+      <nodes>
+        <classShapeMoniker Id="e3259fc3-16d8-4c98-bc2c-a8bc4bff5269" />
+        <classShapeMoniker Id="b89d70ec-ad4c-4682-a252-f3daf398ba68" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 20.8614005533854); (23.5 : 20.8614005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblActivityLog/tblActivityLog_tblActivityLogComment" />
+      <nodes>
+        <classShapeMoniker Id="e3259fc3-16d8-4c98-bc2c-a8bc4bff5269" />
+        <classShapeMoniker Id="9b91d577-be94-415f-93fe-e0514e798f29" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.75 : 62.125); (15.75 : 37.7315177408854); (16.1979191666667 : 37.7315177408854 : JumpStart); (16.3645858333333 : 37.7315177408854 : JumpEnd); (17.5 : 37.7315177408854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblXFormData" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="58fb3382-3adf-4aaa-bbb1-a7b2f8a1a613" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.75 : 63.5112939453125); (15.75 : 78.9525463867188); (17.5 : 78.9525463867188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblBigTable" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="65437e54-be3e-47ef-a1c7-cae5bc7d9f48" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.2812525 : 62.125); (16.2812525 : 31.2315584309896); (17.5 : 31.2315584309896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblBigTableReference" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="e74281d6-3294-4044-b276-e7b69a4a6d0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(15.2187475 : 62.125); (15.2187475 : 32.3785901464844); (16.1979191666667 : 32.3785901464844 : JumpStart); (16.3645858333333 : 32.3785901464844 : JumpEnd); (17.5 : 32.3785901464844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblBigTableReference1" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="e74281d6-3294-4044-b276-e7b69a4a6d0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 27.5729484049479); (9.5 : 27.5729484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableStoreConfig/tblBigTableStoreConfig_tblBigTableStoreInfo" />
+      <nodes>
+        <classShapeMoniker Id="0368bae2-0a13-4888-8d2a-f865583c8afa" />
+        <classShapeMoniker Id="2c9c012b-0b8b-467d-b631-71dd22200e6b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.20923076923077 : 7.0401025390625); (7.20923076923077 : 7.2901025390625); (7.80461538461539 : 7.2901025390625); (7.80461538461539 : 7.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblCategory/tblCategory_tblCategory" />
+      <nodes>
+        <classShapeMoniker Id="b349d770-d718-4485-bff6-e15f8fca945b" />
+        <classShapeMoniker Id="b349d770-d718-4485-bff6-e15f8fca945b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.75 : 4.53929768880208); (15.5 : 4.53929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationProcessor/tblChangeNotificationProcessor_tblChangeNotificationConnection" />
+      <nodes>
+        <classShapeMoniker Id="b4f2ea99-7c19-4b96-a942-be4b3305086d" />
+        <classShapeMoniker Id="bb709ba4-66f8-473d-ae7f-f6524ffa07a1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.5 : 4.53929768880208); (18.25 : 4.53929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationConnection/tblChangeNotificationConnection_tblChangeNotificationQueuedGuid" />
+      <nodes>
+        <classShapeMoniker Id="bb709ba4-66f8-473d-ae7f-f6524ffa07a1" />
+        <classShapeMoniker Id="0a7a4113-d4f4-4b0b-8bfb-e5a5ec901e9c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.75 : 5.36805763506611); (15.4375 : 6.0555576350661); (15.4375 : 5.70359537760417); (16.4166666666667 : 5.70359537760417 : JumpStart); (16.5833333333333 : 5.70359537760417 : JumpEnd); (17.875 : 5.70359537760417); (18.25 : 5.32859537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationProcessor/tblChangeNotificationProcessor_tblChangeNotificationQueuedGuid" />
+      <nodes>
+        <classShapeMoniker Id="b4f2ea99-7c19-4b96-a942-be4b3305086d" />
+        <classShapeMoniker Id="0a7a4113-d4f4-4b0b-8bfb-e5a5ec901e9c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.5 : 3.75); (16.5 : 1.53929768880208); (18.25 : 1.53929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationConnection/tblChangeNotificationConnection_tblChangeNotificationQueuedInt" />
+      <nodes>
+        <classShapeMoniker Id="bb709ba4-66f8-473d-ae7f-f6524ffa07a1" />
+        <classShapeMoniker Id="fc2abc74-2d4f-4b66-aa50-e5942ce9a549" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.75 : 3.50150915249399); (15.125 : 3.12650915249399); (15.125 : 1.96519853320312); (16.4166666666667 : 1.96519853320312 : JumpStart); (16.5833333333333 : 1.96519853320312 : JumpEnd); (18.25 : 1.96519853320312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationProcessor/tblChangeNotificationProcessor_tblChangeNotificationQueuedInt" />
+      <nodes>
+        <classShapeMoniker Id="b4f2ea99-7c19-4b96-a942-be4b3305086d" />
+        <classShapeMoniker Id="fc2abc74-2d4f-4b66-aa50-e5942ce9a549" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.5 : 5.32859537760417); (16.5 : 7.53929768880208); (18.25 : 7.53929768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationConnection/tblChangeNotificationConnection_tblChangeNotificationQueuedString" />
+      <nodes>
+        <classShapeMoniker Id="bb709ba4-66f8-473d-ae7f-f6524ffa07a1" />
+        <classShapeMoniker Id="fad721c1-2f71-4cff-b209-3e2cdd8504b3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.7182867976262 : 5.4631982421875); (15.125 : 5.8699114445613); (15.125 : 7.11339684440104); (16.4166666666667 : 7.11339684440104 : JumpStart); (16.5833333333333 : 7.11339684440104 : JumpEnd); (18.25 : 7.11339684440104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblChangeNotificationProcessor/tblChangeNotificationProcessor_tblChangeNotificationQueuedString" />
+      <nodes>
+        <classShapeMoniker Id="b4f2ea99-7c19-4b96-a942-be4b3305086d" />
+        <classShapeMoniker Id="fad721c1-2f71-4cff-b209-3e2cdd8504b3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.20923076923077 : 18.8958154296875); (4.20923076923077 : 19.1458154296875); (4.80461538461539 : 19.1458154296875); (4.80461538461539 : 18.8958154296875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContent" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.0392976888021); (5.91666666666667 : 15.0392976888021 : JumpStart); (6.08333333333333 : 15.0392976888021 : JumpEnd); (6.25 : 15.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentAccess" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="7d65046a-e95b-4059-a6e8-492f20b8af98" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 7.0401025390625); (8.875 : 7.4151025390625); (8.875 : 16.7315991210938); (9.25 : 16.7315991210938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblCategory/tblCategory_tblContentCategory" />
+      <nodes>
+        <classShapeMoniker Id="b349d770-d718-4485-bff6-e15f8fca945b" />
+        <classShapeMoniker Id="09eb401a-3fc4-45b1-9c25-d9c3843e450b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 16.1782995605469); (5.66666666666667 : 16.1782995605469 : JumpStart); (5.83333333333333 : 16.1782995605469 : JumpEnd); (8.79166666666667 : 16.1782995605469 : JumpStart); (8.95833333333333 : 16.1782995605469 : JumpEnd); (9.04166666666667 : 16.1782995605469 : JumpStart); (9.20833333333333 : 16.1782995605469 : JumpEnd); (9.25 : 16.1782995605469)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentCategory" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="09eb401a-3fc4-45b1-9c25-d9c3843e450b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.65625 : 18.8958154296875); (3.65625 : 24.7395654296875); (9 : 24.7395654296875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentLanguage" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="941f47f7-d291-4951-ae71-98ebab0f6fe2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.2148076923077 : 18.8958154296875); (5.2148076923077 : 20.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentLanguageSetting" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="663ee9e4-9864-4cbc-8772-93a2fa6cf3f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 14.625); (4.5 : 13.3854077148437); (8.79166666666667 : 13.3854077148437 : JumpStart); (9.08333333333333 : 13.3854077148437 : JumpEnd); (9.25 : 13.3854077148437)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="0816c4c2-e220-4367-8e00-db544291c4d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.0312525 : 14.625); (5.0312525 : 13.6302063574219); (8.79166666666667 : 13.6302063574219 : JumpStart); (9.08333333333333 : 13.6302063574219 : JumpEnd); (9.25 : 13.6302063574219)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentProperty1" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="0816c4c2-e220-4367-8e00-db544291c4d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.7656275 : 18.8958154296875); (3.7656275 : 20.21875); (5.13147435897436 : 20.21875 : JumpStart); (5.29814102564103 : 20.21875 : JumpEnd); (6 : 20.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblContentSoftlink" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="ddb770eb-25d4-4da6-86ea-c85747ce8d52" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45923076923077 : 13.9631168619792); (3.125 : 14.3381168619792); (3.125 : 16.7604077148438); (3.5 : 16.7604077148438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContentType/tblContentType_tblContent" />
+      <nodes>
+        <classShapeMoniker Id="c429de90-2efe-4847-83da-46df202d951e" />
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.0429010917468); (3.125 : 9.12653746153846); (3.125 : 5.97195556640625); (3.5 : 5.97195556640625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContentType/tblContentType_tblContentTypeDefault" />
+      <nodes>
+        <classShapeMoniker Id="c429de90-2efe-4847-83da-46df202d951e" />
+        <classShapeMoniker Id="a938ba71-799f-46c1-80b6-01abaf3e4c49" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.97996963571715); (2.87466440244491 : 9.97996963571715 : JumpStart); (3.04133106911158 : 9.97996963571715 : JumpEnd); (3.5 : 9.97996963571715)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContentType/tblContentType_tblContentTypeToContentType" />
+      <nodes>
+        <classShapeMoniker Id="c429de90-2efe-4847-83da-46df202d951e" />
+        <classShapeMoniker Id="9c24d467-b587-46e8-bba6-1b164a4867af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.70950604862781); (2.92758955900692 : 9.70950604862781 : JumpStart); (3.09425622567358 : 9.70950604862781 : JumpEnd); (3.5 : 9.70950604862781)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContentType/tblContentType_tblContentTypeToContentType1" />
+      <nodes>
+        <classShapeMoniker Id="c429de90-2efe-4847-83da-46df202d951e" />
+        <classShapeMoniker Id="9c24d467-b587-46e8-bba6-1b164a4867af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.25 : 21.7267976888021); (11 : 21.7267976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblFrame/tblFrame_tblContentLanguage" />
+      <nodes>
+        <classShapeMoniker Id="6485e0a0-1056-4381-b778-e2b24fc806d4" />
+        <classShapeMoniker Id="941f47f7-d291-4951-ae71-98ebab0f6fe2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.54687875 : 62.125); (16.54687875 : 49.0390942382813); (17.5 : 49.0390942382813)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblIndexRequestLog" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="5b708923-1ffa-4c60-9e4a-6f807d260e38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 17.4291044108073); (3.5 : 17.4291044108073)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblLanguageBranch/tblLanguageBranch_tblContent" />
+      <nodes>
+        <classShapeMoniker Id="c7d7690c-3662-45c2-86ea-02061ba037a3" />
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 17.9220308760016); (3.375 : 18.5470308760016); (3.375 : 23.8994343489583); (3.57291666666667 : 23.8994343489583 : JumpStart); (3.73958333333333 : 23.8994343489583 : JumpEnd); (9 : 23.8994343489583)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblLanguageBranch/tblLanguageBranch_tblContentLanguage" />
+      <nodes>
+        <classShapeMoniker Id="c7d7690c-3662-45c2-86ea-02061ba037a3" />
+        <classShapeMoniker Id="941f47f7-d291-4951-ae71-98ebab0f6fe2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 17.9404924144631); (3.28125 : 18.4717424144631); (3.28125 : 21.6354484049479); (3.29166666666667 : 21.6354484049479 : JumpStart); (3.45833333333333 : 21.6354484049479 : JumpEnd); (3.57291666666667 : 21.6354484049479 : JumpStart); (3.73958333333333 : 21.6354484049479 : JumpEnd); (3.875 : 21.6354484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblLanguageBranch/tblLanguageBranch_tblContentLanguageSetting" />
+      <nodes>
+        <classShapeMoniker Id="c7d7690c-3662-45c2-86ea-02061ba037a3" />
+        <classShapeMoniker Id="663ee9e4-9864-4cbc-8772-93a2fa6cf3f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.70076923076923 : 17.9728011067708); (3.125 : 18.3970318760016); (3.125 : 21.6354484049479); (3.29166666666667 : 21.6354484049479 : JumpStart); (3.45833333333333 : 21.6354484049479 : JumpEnd); (3.57291666666667 : 21.6354484049479 : JumpStart); (3.73958333333333 : 21.6354484049479 : JumpEnd); (3.875 : 21.6354484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblLanguageBranch/tblLanguageBranch_tblContentLanguageSetting1" />
+      <nodes>
+        <classShapeMoniker Id="c7d7690c-3662-45c2-86ea-02061ba037a3" />
+        <classShapeMoniker Id="663ee9e4-9864-4cbc-8772-93a2fa6cf3f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.1927043574219); (3.04166666666667 : 16.1927043574219 : JumpStart); (3.20833333333333 : 16.1927043574219 : JumpEnd); (3.25 : 16.1927043574219); (3.25 : 14.375); (4.41666666666667 : 14.375 : JumpStart); (4.58333333333333 : 14.375 : JumpEnd); (4.94791916666667 : 14.375 : JumpStart); (5.11458583333333 : 14.375 : JumpEnd); (6 : 14.375); (6 : 15.8285953776042); (8.75 : 15.8285953776042); (8.75 : 15.1362125651042); (8.79166666666667 : 15.1362125651042 : JumpStart); (8.95833333333333 : 15.1362125651042 : JumpEnd); (10.25 : 15.1362125651042); (10.25 : 14.6362125651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblLanguageBranch/tblLanguageBranch_tblContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="c7d7690c-3662-45c2-86ea-02061ba037a3" />
+        <classShapeMoniker Id="0816c4c2-e220-4367-8e00-db544291c4d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 15.1739005533854); (23.5 : 15.1739005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblProject/tblProject_tblProjectItem" />
+      <nodes>
+        <classShapeMoniker Id="ab8cbb31-a3c1-4398-8fc8-cf4df22a76f9" />
+        <classShapeMoniker Id="9c0b4e42-e63d-462d-9322-8e0df6809a08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 13.6642976888021); (23.5 : 13.6642976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblProject/tblProject_tblProjectMember" />
+      <nodes>
+        <classShapeMoniker Id="ab8cbb31-a3c1-4398-8fc8-cf4df22a76f9" />
+        <classShapeMoniker Id="b6e8d985-b57a-4449-b84c-27963fc3bedf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 11.8229077148437); (8.79166666666667 : 11.8229077148437 : JumpStart); (8.95833333333333 : 11.8229077148437 : JumpEnd); (9.25 : 11.8229077148437)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblPropertyDefinition/tblPropertyDefinition_tblContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="e8ab44c3-3879-4003-8e7c-7e21ef5fd721" />
+        <classShapeMoniker Id="0816c4c2-e220-4367-8e00-db544291c4d2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.6771061197917); (6.5 : 11.6771061197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContentType/tblContentType_tblPropertyDefinition" />
+      <nodes>
+        <classShapeMoniker Id="c429de90-2efe-4847-83da-46df202d951e" />
+        <classShapeMoniker Id="e8ab44c3-3879-4003-8e7c-7e21ef5fd721" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.3854484049479); (3.5 : 28.3854484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblScheduledItem/tblScheduledItem_tblScheduledItemLog" />
+      <nodes>
+        <classShapeMoniker Id="6da73ac0-4aa9-4cb3-adef-8d0f583cf36c" />
+        <classShapeMoniker Id="81cc5b3d-67e2-4e50-9b9d-8b3629e75a22" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.75 : 11.2315991210937); (15.5 : 11.2315991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblSiteDefinition/tblSiteDefinition_tblHostDefinition" />
+      <nodes>
+        <classShapeMoniker Id="dff07f51-c7eb-4639-bc2d-6363f164bb67" />
+        <classShapeMoniker Id="6b4f5436-c7fa-4307-b1cc-4cc9aa4bec7b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.25153746153846); (3.125 : 4.87653746153846); (3.125 : 1.97199625651042); (3.5 : 1.97199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblSynchedUser/tblSynchedUser_tblSynchedUserRelation" />
+      <nodes>
+        <classShapeMoniker Id="edbaa59b-bbc1-4883-91b2-3db50ee148d5" />
+        <classShapeMoniker Id="33840c06-68d6-4a75-9f8f-0445532f9113" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.61099812825521); (3.5 : 1.61099812825521)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblSynchedUserRole/tblSynchedUserRole_tblSynchedUserRelation" />
+      <nodes>
+        <classShapeMoniker Id="47f85323-bd76-41c8-ace0-5e8ae49afd6d" />
+        <classShapeMoniker Id="33840c06-68d6-4a75-9f8f-0445532f9113" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.2812525 : 63.5112939453125); (16.2812525 : 94.3275463867188); (17.5 : 94.3275463867188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblSystemBigTable" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="8c65bb2c-77c1-4192-b50c-6fd6ca0aad08" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.75 : 25.2027498372396); (23.5 : 25.2027498372396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblPlugIn/tblPlugIn_tblTask" />
+      <nodes>
+        <classShapeMoniker Id="91ea94dc-6f11-4465-9b57-760a0a74c22c" />
+        <classShapeMoniker Id="c257ca01-e2be-434c-8175-6febf9a03f36" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.01562625 : 62.125); (16.01562625 : 26.1354077148438); (17.5 : 26.1354077148438)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblTaskInformation" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="1adccf8b-84de-438e-8a2c-927ee7e0829a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 62.8181469726563); (17.5 : 62.8181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblBigTableIdentity/tblBigTableIdentity_tblVisitorGroupStatistic" />
+      <nodes>
+        <classShapeMoniker Id="6d1dbfb7-e37b-4327-830d-e8dca61bad3c" />
+        <classShapeMoniker Id="f10650fd-6a49-4a28-acd7-41e6a6aedbdb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.25 : 18.7972639973958); (9.0312525 : 18.7972639973958); (9.0312525 : 21.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblWorkContent/tblWorkContent_tblContentLanguage" />
+      <nodes>
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+        <classShapeMoniker Id="941f47f7-d291-4951-ae71-98ebab0f6fe2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.65625); (5.66666666666667 : 15.65625 : JumpStart); (5.83333333333333 : 15.65625 : JumpEnd); (5.91666666666667 : 15.65625 : JumpStart); (6.08333333333333 : 15.65625 : JumpEnd); (8.66666666666667 : 15.65625 : JumpStart); (8.95833333333333 : 15.65625 : JumpEnd); (9.04166666666667 : 15.65625 : JumpStart); (9.20833333333333 : 15.65625 : JumpEnd); (12.25 : 15.65625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblWorkContent" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.25 : 20.75); (13.25 : 19.8188297526042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblFrame/tblFrame_tblWorkContent" />
+      <nodes>
+        <classShapeMoniker Id="6485e0a0-1056-4381-b778-e2b24fc806d4" />
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 17.9728011067708); (2.2812525 : 19.5416577148438); (3.04166666666667 : 19.5416577148438 : JumpStart); (3.45833333333333 : 19.5416577148438 : JumpEnd); (3.57291666666667 : 19.5416577148438 : JumpStart); (3.84896083333333 : 19.5416577148438 : JumpEnd); (5.13147435897436 : 19.5416577148438 : JumpStart); (5.29814102564103 : 19.5416577148438 : JumpEnd); (8.94791916666667 : 19.5416577148438 : JumpStart); (9.11458583333333 : 19.5416577148438 : JumpEnd); (12.25 : 19.5416577148438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblLanguageBranch/tblLanguageBranch_tblWorkContent" />
+      <nodes>
+        <classShapeMoniker Id="c7d7690c-3662-45c2-86ea-02061ba037a3" />
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.9592307692308 : 13.625); (12.9592307692308 : 13.5); (13.5546153846154 : 13.5); (13.5546153846154 : 13.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblWorkContent/tblWorkContent_tblWorkContent" />
+      <nodes>
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 6.23159912109375); (15.0416666666667 : 6.23159912109375 : JumpStart); (15.2083333333333 : 6.23159912109375 : JumpEnd); (15.25 : 6.23159912109375); (15.25 : 12.75); (17 : 12.75); (17 : 15.5); (16 : 15.5); (16 : 15.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblCategory/tblCategory_tblWorkContentCategory" />
+      <nodes>
+        <classShapeMoniker Id="b349d770-d718-4485-bff6-e15f8fca945b" />
+        <classShapeMoniker Id="7ea2e29d-9614-4bae-a93e-b0e85da06ef2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 16.7604484049479); (15 : 16.7604484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblWorkContent/tblWorkContent_tblWorkContentCategory" />
+      <nodes>
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+        <classShapeMoniker Id="7ea2e29d-9614-4bae-a93e-b0e85da06ef2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.5625005); (5.75 : 15.5625005); (5.75 : 16.375); (8.79166666666667 : 16.375 : JumpStart); (8.95833333333333 : 16.375 : JumpEnd); (9.125 : 16.375); (9.125 : 15.5); (12 : 15.5); (12 : 13.375); (14.5 : 13.375); (14.5 : 15.2131982421875); (14.5416666666667 : 15.2131982421875 : JumpStart); (14.7083333333333 : 15.2131982421875 : JumpEnd); (16.9166666666667 : 15.2131982421875 : JumpStart); (17.0833333333333 : 15.2131982421875 : JumpEnd); (17.4166666666667 : 15.2131982421875 : JumpStart); (17.5833333333333 : 15.2131982421875 : JumpEnd); (17.75 : 15.2131982421875); (17.75 : 14.75); (18.468748 : 14.75); (18.468748 : 15)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContent/tblContent_tblWorkContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="8c777415-a0d9-47ef-8be7-3b3cecf2e448" />
+        <classShapeMoniker Id="29d8e15a-b331-44e9-9f9a-96d07871daa3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.9219022623698); (6.25 : 11.9219022623698); (6.25 : 13.1458154296875); (8.79166666666667 : 13.1458154296875 : JumpStart); (8.95833333333333 : 13.1458154296875 : JumpEnd); (9 : 13.1458154296875); (9 : 14.8862125651042); (10.1666666666667 : 14.8862125651042 : JumpStart); (10.3333333333333 : 14.8862125651042 : JumpEnd); (11.75 : 14.8862125651042); (11.75 : 13.125); (14.625 : 13.125); (14.625 : 15.3381982421875); (16.9166666666667 : 15.3381982421875 : JumpStart); (17.0833333333333 : 15.3381982421875 : JumpEnd); (17.5 : 15.3381982421875); (17.5 : 14.5); (18.9166666666667 : 14.5 : JumpStart); (19.0833333333333 : 14.5 : JumpEnd); (19.531252 : 14.5); (19.531252 : 15)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblContentType/tblContentType_tblWorkContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="c429de90-2efe-4847-83da-46df202d951e" />
+        <classShapeMoniker Id="29d8e15a-b331-44e9-9f9a-96d07871daa3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 9.60659912109375); (8.79166666666667 : 9.60659912109375 : JumpStart); (8.95833333333333 : 9.60659912109375 : JumpEnd); (15.1666666666667 : 9.60659912109375 : JumpStart); (15.3333333333333 : 9.60659912109375 : JumpEnd); (19 : 9.60659912109375); (19 : 15)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblPropertyDefinition/tblPropertyDefinition_tblWorkContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="e8ab44c3-3879-4003-8e7c-7e21ef5fd721" />
+        <classShapeMoniker Id="29d8e15a-b331-44e9-9f9a-96d07871daa3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 18.1050032552083); (18 : 18.1050032552083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EpiServerDBDataContext/tblWorkContent/tblWorkContent_tblWorkContentProperty" />
+      <nodes>
+        <classShapeMoniker Id="ed7cb43e-3ccd-4c77-8f3e-a36a7981e967" />
+        <classShapeMoniker Id="29d8e15a-b331-44e9-9f9a-96d07871daa3" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
