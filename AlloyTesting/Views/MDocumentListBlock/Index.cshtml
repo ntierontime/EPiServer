@@ -1,11 +1,27 @@
-﻿@using EPiServer.Core
-@using EPiServer.Web.Mvc.Html
-@using Alloy.Models.Media
+﻿@model Alloy.Models.ViewModels.MDocumentSearchPageViewModel
 
-@model Alloy.Models.Blocks.MDocumentListBlock
-<div class="container">
-    @Html.PropertyFor(x => x.Image)
-    <h3 @Html.EditAttributes(x => x.ButtonText)>@Model.ButtonText</h3>
-    @Html.PropertyFor(x => x.ContactPageLink)
-    @Html.PropertyFor(x => x.MainBody)
-</div>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layouts/_TwoPlusOne.cshtml";
+}
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    <input type="text" tabindex="1" name="q" value="@Model.SearchQuery" />
+    <input type="submit" tabindex="2" class="btn" value="Search" />
+}
+@if (Model.Results != null)
+{
+    <p>Your search for <i> @Model.SearchQuery resulted in @Model.Results.Count() hits</i></p>
+    <div class="listResult">
+        <ul>
+            @foreach (var item in Model.Results)
+            {
+                <li>
+                    <h4><a href="@item.Url">@item.Title</a></h4>
+                    @item.Excerpt
+                </li>
+            }
+        </ul>
+    </div>
+}

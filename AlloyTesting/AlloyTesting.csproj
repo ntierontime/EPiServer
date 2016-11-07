@@ -366,6 +366,7 @@
     <Compile Include="Controllers\ImageFileController.cs" />
     <Compile Include="Controllers\MDocumentListBlockController.cs" />
     <Compile Include="Controllers\MDocumentManagementPageController.cs" />
+    <Compile Include="Controllers\MDocumentSearchPageController.cs" />
     <Compile Include="Controllers\PageControllerBase.cs" />
     <Compile Include="Controllers\PageListBlockController.cs" />
     <Compile Include="Controllers\PreviewController.cs" />
@@ -407,6 +408,7 @@
     <Compile Include="Models\Pages\ISearchPage.cs" />
     <Compile Include="Models\Pages\LandingPage.cs" />
     <Compile Include="Models\Pages\MDocumentManagementPage.cs" />
+    <Compile Include="Models\Pages\MDocumentSearchPage.cs" />
     <Compile Include="Models\Pages\NewsPage.cs" />
     <Compile Include="Models\Pages\ProductPage.cs" />
     <Compile Include="Models\Pages\SitePageData.cs" />
@@ -419,6 +421,7 @@
     <Compile Include="Models\ViewModels\ContactBlockModel.cs" />
     <Compile Include="Models\ViewModels\ContentRenderingErrorModel.cs" />
     <Compile Include="Models\ViewModels\FindSearchContentModel.cs" />
+    <Compile Include="Models\ViewModels\MDocumentSearchPageViewModel.cs" />
     <Compile Include="Models\ViewModels\ImageViewModel.cs" />
     <Compile Include="Models\ViewModels\IPageViewModel.cs" />
     <Compile Include="Models\ViewModels\LayoutModel.cs" />
@@ -558,6 +561,7 @@
     <Content Include="Views\FindSearchPage\Index.cshtml" />
     <Content Include="Views\MDocumentManagementPage\Index.cshtml" />
     <Content Include="Views\MDocumentListBlock\Index.cshtml" />
+    <Content Include="Views\MDocumentSearchPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

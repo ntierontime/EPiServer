@@ -16,8 +16,8 @@ namespace Alloy.Models.Pages
     [SiteImageUrl]
     [AvailableContentTypes(
         Availability.Specific,
-        Include = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage), typeof(ContentFolder), typeof(MDocumentManagementPage) }, // Pages we can create under the start page...
-        ExcludeOn = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage), typeof(MDocumentManagementPage) })] // ...and underneath those we can't create additional start pages
+        Include = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage), typeof(ContentFolder), typeof(MDocumentManagementPage), typeof(MDocumentSearchPage) }, // Pages we can create under the start page...
+        ExcludeOn = new[] { typeof(ContainerPage), typeof(ProductPage), typeof(StandardPage), typeof(ISearchPage), typeof(LandingPage), typeof(MDocumentManagementPage), typeof(MDocumentSearchPage) })] // ...and underneath those we can't create additional start pages
     public class StartPage : SitePageData
     {
         [Display(
