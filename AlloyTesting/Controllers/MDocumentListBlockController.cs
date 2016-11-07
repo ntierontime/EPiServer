@@ -18,17 +18,17 @@ namespace Alloy.Controllers
     {
         public override ActionResult Index(MDocumentListBlock currentBlock)
         {
-            var contentAssetHelper = ServiceLocator.Current.GetInstance<ContentAssetHelper>();
-            var ownerNode = contentAssetHelper.GetOrCreateAssetFolder(currentBlock.CurrentPage.ContentLink);
+            //var contentAssetHelper = ServiceLocator.Current.GetInstance<ContentAssetHelper>();
+            //var ownerNode = contentAssetHelper.GetOrCreateAssetFolder(currentBlock.CurrentPage.ContentLink);
 
-            IContentRepository contentRepository = ServiceLocator.Current.GetInstance<IContentRepository>();
+            //IContentRepository contentRepository = ServiceLocator.Current.GetInstance<IContentRepository>();
 
-            ContentReference assetFolder = ownerNode.ContentLink;
-            IEnumerable<ContentFolder> children = contentRepository.GetChildren<ContentFolder>(assetFolder).ToList();
+            //ContentReference assetFolder = ownerNode.ContentLink;
+            //IEnumerable<ContentFolder> children = contentRepository.GetChildren<ContentFolder>(assetFolder).ToList();
 
-            var folder = Alloy.Helpers.ContentFolderHelper.GetOrCreateSpecificFolder<MDocumentsContentFolder>(children, "MDocuments", assetFolder, contentRepository);
-            List<MDocumentFileBase> childrenFiles = contentRepository.GetChildren<MDocumentFileBase>(folder.ContentLink).ToList();
-            ViewBag.MDocumentFiles = childrenFiles;
+            //var folder = Alloy.Helpers.ContentFolderHelper.GetOrCreateSpecificFolder<MDocumentsContentFolder>(children, "MDocuments", assetFolder, contentRepository);
+            //List<MDocumentFileBase> childrenFiles = contentRepository.GetChildren<MDocumentFileBase>(folder.ContentLink).ToList();
+            //ViewBag.MDocumentFiles = childrenFiles;
 
             return PartialView(currentBlock);
         }

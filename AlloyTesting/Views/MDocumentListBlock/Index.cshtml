@@ -4,24 +4,8 @@
 
 @model Alloy.Models.Blocks.MDocumentListBlock
 <div class="container">
-    @foreach (var documentItem in Model.MDocumentFiles)
-    {
-        <div class="row">
-            <div class="span3">
-                <a href="@UrlResolver.Current.GetUrl(documentItem.ContentLink)" title="@documentItem.Name">@documentItem.Name</a>
-            </div>
-            <div class="span1">@documentItem.CreatedBy</div>
-            <div class="span2">@documentItem.Created.ToShortDateString()</div>
-            <div class="span2">@documentItem.Changed.ToShortDateString()</div>
-            <div class="span2">@documentItem.Status</div>
-        </div>
-        if (!string.IsNullOrWhiteSpace(documentItem.Description))
-        {
-            <div class="row">
-                <div class="span10">
-                    @documentItem.Description
-                </div>
-            </div>
-        }
-    }
+    @Html.PropertyFor(x => x.Image)
+    <h3 @Html.EditAttributes(x => x.ButtonText)>@Model.ButtonText</h3>
+    @Html.PropertyFor(x => x.ContactPageLink)
+    @Html.PropertyFor(x => x.MainBody)
 </div>
