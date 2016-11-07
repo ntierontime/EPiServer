@@ -187,6 +187,7 @@ ClientBin/
 ~$*
 *~
 *.dbmdl
+*.jfm
 *.dbproj.schemaview
 *.pfx
 *.publishsettings
@@ -250,3 +251,6 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# EpiServer blobs
+**/App_Data/[Bb]lobs/
