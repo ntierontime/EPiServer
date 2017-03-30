@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpiServerDB", "EpiServerDB\EpiServerDB.csproj", "{D733B011-3C8F-49C1-A900-7C5CCBD747A2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Alloy.Database", "Alloy.Database\Alloy.Database.sqlproj", "{D2772E8D-0C79-42B5-BFF0-772B525F8368}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Standard", "Standard", "{549E2581-DE30-495C-8001-E57F13C9FCCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{6B3D4F2D-909F-4E38-B86D-20C34DEF0755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPiServerSearch", "EPiServerSearch\EPiServerSearch.csproj", "{A2C67BD4-43AD-4A4A-AD9B-01A3096C5C06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpiserverFind", "EpiserverFind\EpiserverFind.csproj", "{9810C6F7-08F2-4077-A72F-41C3122AEAED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D733B011-3C8F-49C1-A900-7C5CCBD747A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D733B011-3C8F-49C1-A900-7C5CCBD747A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D733B011-3C8F-49C1-A900-7C5CCBD747A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D733B011-3C8F-49C1-A900-7C5CCBD747A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A2C67BD4-43AD-4A4A-AD9B-01A3096C5C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C67BD4-43AD-4A4A-AD9B-01A3096C5C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C67BD4-43AD-4A4A-AD9B-01A3096C5C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C67BD4-43AD-4A4A-AD9B-01A3096C5C06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9810C6F7-08F2-4077-A72F-41C3122AEAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9810C6F7-08F2-4077-A72F-41C3122AEAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9810C6F7-08F2-4077-A72F-41C3122AEAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9810C6F7-08F2-4077-A72F-41C3122AEAED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D733B011-3C8F-49C1-A900-7C5CCBD747A2} = {6B3D4F2D-909F-4E38-B86D-20C34DEF0755}
+		{D2772E8D-0C79-42B5-BFF0-772B525F8368} = {6B3D4F2D-909F-4E38-B86D-20C34DEF0755}
+		{A2C67BD4-43AD-4A4A-AD9B-01A3096C5C06} = {549E2581-DE30-495C-8001-E57F13C9FCCF}
+		{9810C6F7-08F2-4077-A72F-41C3122AEAED} = {549E2581-DE30-495C-8001-E57F13C9FCCF}
+	EndGlobalSection
+EndGlobal
